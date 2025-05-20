@@ -1,6 +1,12 @@
+import { useNavigate } from "react-router"
 export default function MovieCard({movie}){
+    const navigate = useNavigate()
+
+    const HandleBook = () => {
+        navigate(`/booking/${movie.id}`)
+    }
     return(
-        <button className="movie-card">
+        <button onClick={HandleBook} className="movie-card">
             <img src={movie.image}/>
             <aside>
                 <strong>{movie.title}</strong>
