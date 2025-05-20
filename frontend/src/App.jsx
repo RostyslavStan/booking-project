@@ -1,10 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import MovieList from './components/MovieList'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router";
 import MainPage from './pages/Home'
+import Booking from './pages/Booking'
+
 export default function App() {
   
   return (
@@ -12,6 +10,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/mainPage" />} />
         <Route path="/mainPage" element={<MainPage />} />
+        <Route path="/booking/:id" element={<Booking />} />
       </Routes>
     </BrowserRouter>
   )
