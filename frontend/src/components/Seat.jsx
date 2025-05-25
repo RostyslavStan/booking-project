@@ -1,8 +1,8 @@
-export default function Seat({isSelected, onClick})
+export default function Seat({isSelected, isBooked, onClick})
 {
     return(
         <div 
-        className={`seat ${isSelected ? 'selected' : 'available'}`} 
+        className={`seat ${isBooked ? 'booked' : isSelected ? 'selected' : 'available'}`} 
         onClick={onClick}></div>
     )
 }

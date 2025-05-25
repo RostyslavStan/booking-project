@@ -13,6 +13,7 @@ export default function MovieCard({movie}){
                 <p>Сюжет: {movie.description}</p>
                 <p>Жанр: {movie.genre}</p>
                 <p>Сеанс: {movie.time}</p>
+                <p>Сеанс: {movie.date}</p>
             </aside>
         </button>
     )

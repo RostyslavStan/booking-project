@@ -78,6 +78,11 @@
     background-color: #2980b9;
 }
 
+.seat.booked {
+    background-color: #e74c3c;
+    cursor: not-allowed;
+}
+
 .legend {
     display: flex;
     gap: 2rem;

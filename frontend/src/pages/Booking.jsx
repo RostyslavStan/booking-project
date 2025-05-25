@@ -1,7 +1,12 @@
 import CinemaHall from "../components/CinemaHall"
 
 export default function Booking() {
-    return(
+    function Book() {
+        
+    }
+    return(        
+        <>
         <CinemaHall/>  
+        </>
     )
 }
